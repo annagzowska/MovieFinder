@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Film finder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="Film finder"/>
+    <meta name="author" content="Anna Gzowska"/>
+
+    <link href="../../admin/bootstrap/css/bootstrap.min.css" th:href="@{admin/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link href="../../admin/font-awesome/css/font-awesome.min.css" th:href="@{admin/font-awesome/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+    <link href="../../css/welcome.css" th:href="@{/css/style.css}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<script src="../../admin/bootstrap/js/bootstrap.min.js" th:src="@{admin/bootstrap/js/bootstrap.min.js}"></script>
+
+<nav class="navbar navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-home" href=".navbar">
+                <img src="../../img/logo.png" th:src="@{img/logo.png}"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class="page-scroll" href="/movie">Find movie</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About project</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="main-site">
+    <div class="main-site-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="name-heading">Movies Finder</h1>
+                    <p class="main-site-text">My project in Spring Boot</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="about" class="about container content-section text-center">
+    <div class="about-section">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>About</h2>
+            <p>It is a simple repository with movies I want to see. Next I will add an option to check information about the movie in filmweb.</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container text-center fixed-bottom">
+        <p>&copy; 2018 Anna Gzowska. All Rights Reserved</p>
+    </div>
+</footer>
+</body>
+</html>
